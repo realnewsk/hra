@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Blob Blaster: Lunch Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="game-container">
+        <div id="hud-frags">Frags: <span id="frag-count">0</span> / 30</div>
+        
+        <canvas id="gameCanvas" width="800" height="450"></canvas>
+        
+        <div id="hud-bottom">
+            <div id="hud-health">80 ❤️</div>
+            <div id="hud-ammo">10 ⚡</div>
+        </div>
+
+        <div id="lunch-modal" class="hidden">
+            <div class="modal-content">
+                <h2>🏆 30 FRAGS REACHED! 🏆</h2>
+                <h3>Dnešný Obed (Today's Lunch Menu):</h3>
+                <div id="lunch-loader" class="spinner">Načítavam menu... (Loading...)</div>
+                <div id="lunch-list"></div>
+                <button onclick="window.location.reload()">Hrať znova (Play Again)</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
